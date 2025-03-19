@@ -33,23 +33,27 @@ const randomMotivateSpeech = [
   'The future belongs to those who act today.',
   'Your resilience is your superpower.',
 ];
-const min = 0;
-const randomWord =
-  randomWordArray[
-    Math.floor(Math.random() * (randomWordArray.length - 1 - min + 1) + min)
-  ];
-// console.log(randomWord);
-const randomSpeach =
-  randomMotivateSpeech[
-    Math.floor(
-      Math.random() * (randomMotivateSpeech.length - 1 - min + 1) + min
-    )
-  ];
-// console.log(randomSpeach);
-const advice =
-  randomWordArray[
-    Math.floor(Math.random() * (randomWordArray.length - 1 - min + 1) + min)
-  ];
-console.log(`You're ${randomWord}!`);
-console.log(`You need to be more ${advice}`);
-console.log(randomSpeach);
+function showSpeech() {
+  const min = 0;
+  const randomWord =
+    randomWordArray[
+      Math.floor(Math.random() * (randomWordArray.length - 1 - min + 1) + min)
+    ];
+  const randomSpeach =
+    randomMotivateSpeech[
+      Math.floor(
+        Math.random() * (randomMotivateSpeech.length - 1 - min + 1) + min
+      )
+    ];
+  const advice =
+    randomWordArray[
+      Math.floor(Math.random() * (randomWordArray.length - 1 - min + 1) + min)
+    ];
+  console.log(`You're ${randomWord}!`);
+  console.log(`You need to be more ${advice}`);
+  console.log(randomSpeach);
+  console.log(' /\\_/\\');
+  console.log('( o.o )');
+  console.log(' > ^ <');
+}
+showSpeech();
